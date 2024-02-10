@@ -20,8 +20,8 @@ include 'server.php';
          Failed Responses </h6>
             <tr >
               <!-- <th scope="col" class="table-primary">S.NO</th> -->
-              <th scope="col" class="table-primary">Help Code</th>
-              <th scope="col" class="table-primary">Student Name</th>
+              <th scope="col" class="table-primary">oder Code</th>
+              <th scope="col" class="table-primary"> Name</th>
 
               <th scope="col" class="table-primary">Time of Request</th>
               <th scope="col" class="table-primary">Action</th>
@@ -100,11 +100,11 @@ include 'server.php';
       <div class="modal-body">
         <form>
           <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Help Code:</label>
+            <label for="recipient-name" class="col-form-label">order Code:</label>
             <input type="text" class="form-control" readonly id="student_HelpId">
           </div>
           <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Student Name:</label>
+            <label for="recipient-name" class="col-form-label"> Name:</label>
             <input type="text" class="form-control"readonly id="student-name">
           </div>
           <div class="form-group">
@@ -122,7 +122,7 @@ include 'server.php';
             <textarea class="form-control" id="request_details" readonly ></textarea>
           </div>
           <div class="form-group">
-            <label for="message-text" class="col-form-label">Rescue Report:</label>
+            <label for="message-text" class="col-form-label">delivery Report:</label>
             <textarea class="form-control" id="incident-report" readonly></textarea>
           </div>
           <div class="modal-footer">

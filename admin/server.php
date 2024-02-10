@@ -15,7 +15,7 @@ require 'vendor/autoload.php';
 //##############################///
 // connect to the database
 try{
-$db = mysqli_connect('localhost', 'gideon', 'gideon', 'maseno_emergency');
+$db = mysqli_connect('localhost', 'root', 'root', 'hotel_management');
 
 //echo 'Database Connected Successfully';
 }

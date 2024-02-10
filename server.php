@@ -7,7 +7,7 @@ session_start();
 // error_reporting(E_ALL);
 // connect to the database
 try{
-$db = mysqli_connect('localhost', 'gideon', 'gideon', 'maseno_emergency');
+$db = mysqli_connect('localhost', 'root', 'root', 'hotel_management');
 //echo 'Database Connected Successfully';
 }
 catch(Exception $e) {
@@ -88,7 +88,8 @@ if (count($errors) == 0) {
       if (empty($password)) {
         array_push($errors, "Password is required");
       }
-
+//declare variable
+$errors=array();
       if (count($errors) == 0) {
         $encrypted_password = md5($password);
         $login_query = "SELECT * FROM student_details WHERE `regNum`='$username' AND `password`='$encrypted_password'";
@@ -231,6 +232,67 @@ if (mysqli_num_rows($results) == 1) {
     echo '<script>alert("Unable to submit this request, Contact the System Administrator!")</script>';
     header("Location: dashboard.php");
   }
+}
+
+// booking process
+if(isset($_POST["submit"])){
+  $name = $_POST['name'];
+  $number=$_POST['number'];
+  $room_type=$_POST['room_type'];
+  $image=$_POST['image'];
+  $date=$_POST['date'];
+if($_FILES["image"]["error"] == 4){
+  echo
+  "<script> alert('Image Does Not Exist'); </script>"
+  ;
+}
+else{
+  $fileName = $_FILES["image"]["name"];
+  $fileSize = $_FILES["image"]["size"];
+  $tmpName = $_FILES["image"]["tmp_name"];
+
+  $validImageExtension = ['jpg', 'jpeg', 'png'];
+  $imageExtension = explode('.', $fileName);
+  $imageExtension = strtolower(end($imageExtension));
+  if ( !in_array($imageExtension, $validImageExtension) ){
+    echo
+    "
+    <script>
+      alert('Invalid Image Extension');
+    </script>
+    ";
+  }
+  else if($fileSize > 1000000){
+    echo
+    "
+    <script>
+      alert('Image Size Is Too Large');
+    </script>
+    ";
+  }
+  else{
+    $newImageName = uniqid();
+    $newImageName .= '.' . $imageExtension;
+
+    move_uploaded_file($tmpName, 'admin/img/' . $newImageName);
+    $register_query ="INSERT INTO room(name,number,room_type,image,date)VALUES('$name','$number','$room_type','$newImageName','$date')";
+    mysqli_query($db, $register_query);
+    echo
+  
+    "
+    <script>
+      alert('Successfully Added');
+      document.location.href = 'dashboard.php';
+    </script>
+    ";
+  }
+}
+}
+
+//room booking
+if(isset($_post['bookbtn'])){
+  echo "button cicked";
+
 }
 
 ob_end_flush();

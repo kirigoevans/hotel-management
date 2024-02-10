@@ -34,6 +34,9 @@
         <a class="nav-link active" href="paramedics.php">Paramedics</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link active" href="booked.php">rooms booked</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link active" href="drivers.php">Drivers</a>
       </li>
       <li class="nav-item active">

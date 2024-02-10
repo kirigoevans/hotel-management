@@ -18,7 +18,7 @@ include './components/header.php';
             <div class="col-md-6 mt-5 login-page">
 
                 <div class="col-md-12 mb-2 login-page-header">
-                    <h2 class="text-center" style="color: #fff">Maseno University Emergency System</h2>
+                    <h2 class="text-center" style="color: #fff">Hotel management system</h2>
 
                     <div class="row">
                         <div class="col-md-3"></div>
@@ -37,7 +37,7 @@ include './components/header.php';
             ?>
                         <label for="inputEmail3" class="col-sm-3 col-form-label">Username</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="e.g BA/00025/013" name="regno"
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="e.g BAS/00025/019" name="regno"
                                 required />
                         </div>
                     </div>

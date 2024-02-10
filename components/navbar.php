@@ -13,6 +13,9 @@
         <a class="nav-link" href="dashboard.php">Home </a>
       </li>
       <li class="nav-item active">
+        <a class="nav-link" href="room.php">book room </a>
+      </li>
+      <li class="nav-item active">
         <a class="nav-link" href="track.php">Track Requests </a>
       </li>
       <li class="nav-item active">

@@ -52,6 +52,24 @@ include 'server.php';
 </div>
   <!--end of one Card -->
   <!--start of one Card -->
+  <div class="col-xl-3 col-md-6 mb-4 mt-4">
+  <div class="card border-left-primary shadow h-100 py-2">
+      <div class="card-body">
+          <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                  <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                    <a href="./booked.php">the rooms booked</div>
+              </div>
+              <div class="col-auto">
+                  <i class="fa-solid fa-truck-medical fa-2x"style="color:#e83e8c"></i>
+              </a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!--end of one Card -->
+  <!--start of one Card -->
+</div>
 <div class="col-xl-3 col-md-6 mb-4 mt-4">
   <div class="card border-left-primary shadow h-100 py-2">
       <div class="card-body">
@@ -99,7 +117,7 @@ include 'server.php';
               <div class="row no-gutters align-items-center">
                   <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                        <a href="./team.php"> Rescue Teams</div>
+                        <a href="./team.php"> delivery stuffs</div>
                   </div>
                   <div class="col-auto">
                       <!-- <i class="fa-solid fa-wifi fa-2x text-gray-300" style="color:#e83e8c"></i> -->
@@ -137,7 +155,7 @@ include 'server.php';
             <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                      <a href="./paramedics.php"> Paramedics & Nurses</div>
+                      <a href="./paramedics.php"> cooks and cleaners</div>
                         
                 </div>
                 <div class="col-auto">

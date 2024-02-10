@@ -4,7 +4,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="icon" href="./static/img/logo.png" type="image/x-icon" />
+    <link rel="icon" href="./static/img/hotelogo.png" type="image/x-icon" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"

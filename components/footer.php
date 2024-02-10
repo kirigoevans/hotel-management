@@ -2,7 +2,7 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3" style="font-weight: bold;">© <span id="year">2050</span> Copyright:
-    <a href="https://maseno.ac.ke" style="color: black;"> Maseno University</a>
+    <a href="https://maseno.ac.ke" style="color: black;"> miwi hotel management system</a href><br>Powered By<strong><a href> kirigo tech</a>
   </div>
   <!-- Copyright -->
 

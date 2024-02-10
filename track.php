@@ -34,7 +34,7 @@ if(isset($_POST['search-button'])){
         role='alert'
         id='alert-section'
         >
-        No Data Found 😧. Please Check the Help Code and Try Again!!
+        No Data Found 😧. Please Check the order Code and Try Again!!
         <button
           type='button'
           class='close'
@@ -55,7 +55,7 @@ if(isset($_POST['search-button'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Student | Tracking</title>
+  <title>order | Tracking</title>
   <?php
 include './components/header.php';
 ?>
@@ -92,13 +92,13 @@ include './components/header.php';
   <?php
   include 'errors.php';
   ?>
-  <caption>List of emergency requests made by <?php  echo  $_SESSION['firstname'].' '. $_SESSION['lastname']; ?></caption>
+  <caption>List order requests made by <?php  echo  $_SESSION['firstname'].' '. $_SESSION['lastname']; ?></caption>
 
   <thead>
-      <h3>Emergency Requests</h3>
+      <h3>order Requests</h3>
       
     <tr class='bg-primary'>
-      <th scope="col">Help Code</th>
+      <th scope="col">order Code</th>
       <th scope="col">Registration  Number</th>
       <th scope="col">Time of Request</th>
       <th scope="col">Request Status</th>

@@ -16,7 +16,7 @@ include './components/header.php';
         <div class="col-md-6 mt-5 register-page">
           <div class="col-md-12 mb-2 register-page-header">
             <h2 class="text-center" style="color: #fff">
-              Maseno E-Health Student Registration Form
+              Maseno Emergency Student Registration Form
             </h2>
 
             <div class="row">
